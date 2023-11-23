@@ -1,0 +1,75 @@
+package Item;
+
+import java.lang.System;
+import java.awt.*;
+import java.awt.event.KeyListener;
+import javax.swing.*;
+
+class ItemAppear extends JPanel{
+	
+	private ImageIcon Item_appear, Item_disappear;
+	private boolean isAppear;
+	private double xpos_item, ypos_item;
+	
+	
+	public ItemAppear(JFrame frame) {
+		
+		Item_appear = new ImageIcon("C:\\image\\box.png");
+		
+//		xpos_item;
+//		ypos_item;
+		
+		isAppear = false;
+		
+	}
+	
+	
+	
+}
+class Main extends JFrame {
+	
+	Image image;
+	int x = 100;
+	int y = 100;
+	
+	public Main(String title) {
+		setTitle(title);
+		setLocation(0, 0); //창 위치 솔정
+		setSize(960, 540); //창 크기 설정
+		getContentPane().setBackground(Color.darkGray); //배경 색 조정
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setIconImage(Toolkit.getDefaultToolkit().getImage("/image/고양이.gif"));
+		
+		x = (int)getWidth() / 2;
+		y = (int)getHeight() / 2;
+	}
+}
+
+class PlayerImage extends JFrame {
+	public PlayerImage() {
+		JLabel image = new JLabel();
+		
+		ImageIcon icon = new ImageIcon(PlayerImage.class.getResource("/image/고양이춤.gif"));
+		image.setIcon(icon);
+		image.setLocation(0, 0);
+		image.setSize(getSize());
+		
+		getContentPane().add(image);
+	}
+}
+
+public class test {
+	public static void main(String[] args) {
+		Main frame = new Main("서기 3876년, 인간 시대의 종말이 도래했다.");
+		// PlayerImage player = new PlayerImage();
+		
+		Dimension frame_size = frame.size();
+		
+		frame.setVisible(true); // 화면 띄우기
+		// player.setVisible(true);
+		
+		// double xpos = frame_size.width();
+	}
+}
