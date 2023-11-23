@@ -29,8 +29,8 @@ class Item extends JFrame implements ActionListener{
 		this.hp = hp; // 아이템 체력(내구도)
 		this.isExist = true;
 		
-		ImageIcon itemBoxIcon = new ImageIcon("C:\\image\\box.png"); //아이템 이미지
-		ImageIcon itemIcon_1 = new ImageIcon("C:\\image\\item1.png");
+		ImageIcon itemBoxIcon = new ImageIcon("Image/box.png"); //아이템 이미지
+		ImageIcon itemIcon_1 = new ImageIcon("Image/item1.png");
 		
 		itemBoxImage = itemBoxIcon.getImage(); // itemImg에 itemIcon 할당
 		itemImage_1 = itemIcon_1.getImage();
