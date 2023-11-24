@@ -33,8 +33,8 @@ public class JPFrame extends JFrame
 		backgroundMap = new JLabel(new ImageIcon("Image/bg_test1.png"));
 		setContentPane(backgroundMap);
 		
-		this.player = new Player();
-		this.add(player);
+		player = new Player();
+		add(player);
 	}
 	
 	
@@ -103,7 +103,6 @@ public class JPFrame extends JFrame
 	public static void main(String[] args) 
 	{
 		new JPFrame();
-		new ItemProperty();
 	}
 
 }
